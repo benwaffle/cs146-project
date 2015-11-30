@@ -1,0 +1,57 @@
+body {
+  font: 1em sans-serif;
+}
+form, #summary_wrapper {
+  display: inline-block;
+  background-color: #f3f3f3;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+fieldset {
+  border: solid 1px #a1a1a1;
+  margin-bottom: 5px;
+}
+input, select, textarea {
+  display: block;
+  float: left;
+  margin: 2px;
+  box-sizing: border-box;
+}
+input[type=text], input[type=password], select, textarea {
+  width: 200px;
+}
+input:required:invalid {
+  background: white right no-repeat url("invalid.png");
+}
+input:required:valid {
+  background: white right no-repeat url("valid.png");
+}
+input:required:valid ~ p.info {
+  visibility: hidden;
+}
+.inputitem {
+  display: block;
+  float: left;
+}
+.labelitem {
+  display: block;
+  float: left;
+  vertical-align: text-top;
+  width: 120px;
+  margin: 2px;
+}
+br {
+  clear: left;
+}
+p.info {
+  font-size: 0.7em;
+  color: red;
+  display: block;
+  margin: 0 0 0 2px;
+}
+#reset_submit {
+  float: right;
+}
+#summary_wrapper {
+  display: none;
+}
