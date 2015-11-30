@@ -30,5 +30,6 @@ nav li{
   text-align: center;
   display: table-cell;
   width: 16.6%;
+  float: right;
 
 }
