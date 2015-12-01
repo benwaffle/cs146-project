@@ -32,3 +32,13 @@ nav li{
   float: right;
 
 }
+
+p {
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  right:2em;
+  text-shadow: 3px 3px 3px grey;
+  
+}
