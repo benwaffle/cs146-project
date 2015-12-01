@@ -14,10 +14,8 @@ nav {
   padding-top: 2em;
   padding-bottom: 2em;
   display: table;
-  background-color: black;
-  color: white;
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
-
 }
 
 nav ul{
@@ -30,5 +28,7 @@ nav li{
   display: table-cell;
   width: 16.6%;
   float: right;
+  color: white;
+  text-decoration: none;
 
 }
