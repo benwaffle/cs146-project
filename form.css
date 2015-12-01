@@ -1,15 +1,24 @@
 body {
-  font: 1em sans-serif;
+  background: center/100% no-repeat fixed;
+  max-width: 100%;
+  
 }
+
 form, #summary_wrapper {
   display: inline-block;
-  background-color: #f3f3f3;
+  background-color: black;
+  width: 75%;
   margin-bottom: 10px;
   padding: 10px;
+  margin-left: 12.5%;
+  margin-right: auto;
 }
 fieldset {
-  border: solid 1px #a1a1a1;
+  border: solid 1px white;
   margin-bottom: 5px;
+  color:white;
+  font-size: 2em;
+  text-align: center;
 }
 input, select, textarea {
   display: block;
@@ -17,9 +26,7 @@ input, select, textarea {
   margin: 2px;
   box-sizing: border-box;
 }
-input[type=text], input[type=password], select, textarea {
-  width: 200px;
-}
+
 input:required:invalid {
   background: white right no-repeat url("invalid.png");
 }
@@ -37,7 +44,7 @@ input:required:valid ~ p.info {
   display: block;
   float: left;
   vertical-align: text-top;
-  width: 120px;
+  width: 240px;
   margin: 2px;
 }
 br {
@@ -54,4 +61,27 @@ p.info {
 }
 #summary_wrapper {
   display: none;
+}
+nav{
+ font-size: 2em;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: table;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+nav ul{
+  list-style: none;
+  display: table-cell;
+}
+
+nav li{
+  text-align: center;
+  display: table-cell;
+  width: 16.6%;
+  float: right;
+
 }
