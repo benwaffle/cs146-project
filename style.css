@@ -4,7 +4,8 @@
 }
 
 body {
-  background: center/100% no-repeat fixed;
+  background: no-repeat fixed;
+  background-size: cover;
   max-width: 100%;
 }
 
@@ -14,7 +15,8 @@ nav {
   padding-top: 2em;
   padding-bottom: 2em;
   display: table;
-  background: rgba(0, 0, 0, 0.4);
+  background-color: black;
+  color: white;
   text-align: center;
 }
 
@@ -28,7 +30,5 @@ nav li{
   display: table-cell;
   width: 16.6%;
   float: right;
-  color: white;
-  text-decoration: none;
 
 }
