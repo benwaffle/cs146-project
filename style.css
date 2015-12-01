@@ -16,7 +16,7 @@ nav {
   padding-top: 2em;
   padding-bottom: 2em;
   display: table;
-  background-color: black;
+  background: rgba(0,0, 0,0.4);
   color: white;
   text-align: center;
 }
