@@ -53,3 +53,58 @@ a{
 a:hover {
   color: black;
 }
+
+form, #summary_wrapper {
+  display: inline-block;
+  background-color: black;
+  width: 75%;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 12.5%;
+  margin-right: auto;
+}
+fieldset {
+  border: solid 1px white;
+  margin-bottom: 5px;
+  color:white;
+  font-size: 2em;
+  text-align: center;
+}
+input, select, textarea {
+  display: block;
+  float: left;
+  margin: 2px;
+  width:30%;
+  height:2em;
+  box-sizing: border-box;
+}
+
+input:required:invalid {
+  background: white right no-repeat url("invalid.png");
+}
+input:required:valid {
+  background: white right no-repeat url("valid.png");
+}
+input:required:valid ~ p.info {
+  visibility: hidden;
+}
+.inputitem {
+  display: block;
+  float: left;
+}
+.labelitem {
+  display: block;
+  float: left;
+  vertical-align: text-top;
+  width: 240px;
+  margin: 2px;
+}
+br {
+  clear: left;
+}
+p.info {
+  font-size: 0.7em;
+  color: red;
+  display: block;
+  margin: 0 0 0 2px;
+}
