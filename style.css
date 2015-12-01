@@ -4,11 +4,10 @@
 }
 
 body {
-  background-attachment: fixed;
+  background: center/100% no-repeat fixed;
   max-width: 100%;
-    
 }
-    
+
 nav {
   font-size: 2em;
   width: 100%;
@@ -18,7 +17,7 @@ nav {
   background-color: black;
   color: white;
   text-align: center;
-  
+
 }
 
 nav ul{
