@@ -38,9 +38,7 @@ h2{
 
 
 body {
-  background-image: url("Background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: fixed no-repeat;
   background-size: cover;
   max-width: 100%;
   font-family: Lato;
