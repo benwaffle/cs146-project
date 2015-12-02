@@ -111,13 +111,13 @@
         <legend>Services Info</legend>
         <div class="labelitem">Meal:</div>
         <div class="inputitem">
-          <input type="radio" name="meal" id="breakfast" value="Breakfast" checked="checked" />
+          <input type="checkbox" name="meal" id="breakfast" value="Breakfast" checked="checked" />
           <label for="breakfast">Breakfast</label><br />
-          <input type="radio" name="meal" id="lunch" value="Lunch" />
+          <input type="checkbox" name="meal" id="lunch" value="Lunch" />
           <label for="lunch">Lunch</label><br />
-          <input type="radio" name="meal" id="dinner" value="Dinner" />
+          <input type="checkbox" name="meal" id="dinner" value="Dinner" />
           <label for="dinner">Dinner</label><br />
-          <input type="radio" name="meal" id="snacks" value="Snacks" />
+          <input type="checkbox" name="meal" id="snacks" value="Snacks" />
           <label for="snacks">Snacks</label>
         </div><br /><br />
         <div class="labelitem">Meal Type:</div>
@@ -135,6 +135,9 @@
         </div><br /><br />
         <label for="date_needed" class="labelitem">Date needed:</label>
         <input type="date" name="date_needed" id="date_needed" /><br /><br />
+          <label for="quantitity" class="labelitem">Select quantity:</label>
+          <input type="number" name="quantity" min="1" max="350"><br /> <br />
+
         <label for="special_instructions" class="labelitem">Special Instructions:</label>
         <textarea name="special_instructions" id="special_instructions" rows="10" cols="20" placeholder="Please enter any special instructions."></textarea><br />
       </fieldset>
