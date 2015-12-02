@@ -54,6 +54,7 @@ a:hover {
   color: black;
 }
 
+
 form, #summary_wrapper {
   display: inline-block;
   background: rgba(0,0, 0,0.75);
@@ -63,6 +64,15 @@ form, #summary_wrapper {
   margin-left: 12.5%;
   margin-right: auto;
 }
+
+
+img.center{
+    display: block;
+    margin: auto;
+    margin-top: 8%;
+    padding: 10px;  
+}
+
 fieldset {
   border: solid 1px white;
   margin-bottom: 5px;

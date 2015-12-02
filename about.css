@@ -5,8 +5,42 @@
   padding: 0;
 }
 
+.aboutus {
+  width: 15em;
+  height: 15em;
+  box-shadow: 5px 5px 5px black;
+  
+}
+
+.people{
+  display: inline;
+  text-align: center; 
+  color: white;
+}
+
+p {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 1.5em;
+  background-clip: inherit;
+  color: black;
+  
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2{
+  color:black;
+}
+
+
 body {
-  background: no-repeat fixed;
+  background-image: url("Background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   max-width: 100%;
   font-family: Lato;
@@ -43,3 +77,5 @@ a{
 a:hover {
   color: black;
 }
+
+
