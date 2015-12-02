@@ -31,18 +31,8 @@ nav ul{
 nav li{
   text-align: center;
   display: table-cell;
-  float: right;
   margin: 0 20px 0 20px;
-
-}
-
-p {
-  font-size: 4em;
-  color: white;
-  position: absolute;
-  bottom: 50px;
-  right:2em;
-  text-shadow: 3px 3px 3px grey;
+  float: right;
 }
 
 a{
