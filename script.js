@@ -1,9 +1,28 @@
+var results = [
+  {
+    name: 'chinese food worker',
+    file: 'ChineseFoodWorker.jpg'
+  },
+  {
+    name: 'Property Brothers',
+    file: 'PropertyBrothers.jpg'
+  },
+  {
+    name: 'Ron Stoppable',
+    file: 'RonStoppable.png'
+  },
+  {
+    name: 'Sam',
+    file: 'SamIAm.jpg'
+  }
+];
+
 function id(id) {
   return document.getElementById(id);
 }
 
 function summarize() {
-  var str = "Summary: " + id("firstname").value.trim() + " " +
+  var str = id("firstname").value.trim() + " " +
                     id("lastname").value.trim() + "<br />" +
                     id("address1").value.trim() + "<br />";
   var field = id("address2").value;
@@ -36,6 +55,10 @@ function summarize() {
 
   id("summary").innerHTML = str;
   id("summary_wrapper").style.display = "block";
+
+  var random = Math.floor(Math.random() * results.length);
+  id("hand_name").innerHTML = results[random].name;
+  id("hand_image").src = 'images/Hands/' + results[random].file;
 }
 
 function reset_form() {
