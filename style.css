@@ -62,7 +62,7 @@ form, #summary_wrapper {
   margin-bottom: 10px;
   padding: 10px;
   margin-left: 12.5%;
-  margin-right: auto;
+  margin-right: 12.5%;
 }
 
 #logo {
@@ -83,10 +83,14 @@ input, select, textarea {
   display: block;
   float: left;
   margin: 2px;
-  width:30%;
   height:2em;
+  width:300px;
   box-sizing: border-box;
   text-align: left;
+}
+
+#address{
+  width:500px;
 }
 
 input:required:invalid {

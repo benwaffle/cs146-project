@@ -5,27 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="background.js"></script>
-    <script type="text/javascript">
-      function summarize() {
-        var str = "SID: " + document.getElementById("sid").value.trim() + "<br />" +
-            document.getElementById("firstname").value.trim() + " " +
-            document.getElementById("lastname").value.trim() + "<br />" +
-            document.getElementById("address1").value.trim() + "<br />";
-        var field = document.getElementById("address2").value;
-        if (field != null && field.trim() != "") {
-            str += field + "<br />";
-        }
-        str += document.getElementById("city").value.trim() + ", " +
-            document.getElementById("state").value.trim() + " " +
-            document.getElementById("zipcode").value.trim() + "<br />";
-        // Next week...
-        document.getElementById("summary").innerHTML = str;
-        document.getElementById("summary_wrapper").style.display = "block";
-      }
-
-      function reset_form() {
-      }
-    </script>
+    <script src="script.js"></script>
   </head>
   <body>
     <nav>
@@ -44,7 +24,7 @@
         <label for="lastname" class="labelitem">Last name:</label>
         <input type="text" name="lastname" id="lastname" size="24" maxlength="32" placeholder="Enter last name." required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="Last name cannot be blank." /><br />
         <div class="labelitem"><label for="address1">Address:</label></div>
-        <div class="inputitem">
+        <div class="inputitem" id="address">
           <input type="text" name="address1" id="address1" size="24" maxlength="32" placeholder="Enter street address." required pattern=".+" title="Address cannot be blank." /><br />
           <input type="text" name="address2" id="address2" size="24" maxlength="32" /><br />
         </div><br />
@@ -111,13 +91,13 @@
         <legend>Services Info</legend>
         <div class="labelitem">Meal:</div>
         <div class="inputitem">
-          <input type="checkbox" name="meal" id="breakfast" value="Breakfast" checked="checked" />
+          <input type="checkbox" name="meal[]" id="breakfast" value="Breakfast" checked="checked" />
           <label for="breakfast">Breakfast</label><br />
-          <input type="checkbox" name="meal" id="lunch" value="Lunch" />
+          <input type="checkbox" name="meal[]" id="lunch" value="Lunch" />
           <label for="lunch">Lunch</label><br />
-          <input type="checkbox" name="meal" id="dinner" value="Dinner" />
+          <input type="checkbox" name="meal[]" id="dinner" value="Dinner" />
           <label for="dinner">Dinner</label><br />
-          <input type="checkbox" name="meal" id="snacks" value="Snacks" />
+          <input type="checkbox" name="meal[]" id="snacks" value="Snacks" />
           <label for="snacks">Snacks</label>
         </div><br /><br />
         <div class="labelitem">Meal Type:</div>
@@ -136,10 +116,20 @@
         <label for="date_needed" class="labelitem">Date needed:</label>
         <input type="date" name="date_needed" id="date_needed" /><br /><br />
           <label for="quantitity" class="labelitem">Select quantity:</label>
-          <input type="number" name="quantity" min="1" max="350"><br /> <br />
+          <input type="number" id="quantity" name="quantity" min="1" max="350"><br /> <br />
 
         <label for="special_instructions" class="labelitem">Special Instructions:</label>
         <textarea name="special_instructions" id="special_instructions" rows="10" cols="20" placeholder="Please enter any special instructions."></textarea><br />
+       <section id="reset_submit">
+        <input type="reset" value="Reset" onclick="summarize()" />
+        <input type="submit" value="Submit"/>
+      </section><br />
+      <div id="summary_wrapper">
+        <fieldset>
+          <legend>Summary</legend>
+          <section id="summary"></section>
+        </fieldset>
+      </div>
       </fieldset>
       <br />
     </form>
