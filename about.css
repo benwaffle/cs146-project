@@ -80,6 +80,7 @@ nav li{
 a{
   color: white;
   text-decoration: none;
+  transition: .5s;
 }
 
 a:hover {
