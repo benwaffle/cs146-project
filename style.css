@@ -14,8 +14,14 @@ body {
 }
 
 a {
+  color:white;
   text-decoration: none;
 }
+
+a:hover {
+  color: black;
+}
+
 
 /* navbar */
 
@@ -121,4 +127,12 @@ p.info {
   color: red;
   display: block;
   margin: 0 0 0 2px;
+}
+
+#reset_submit {
+  float: right;
+}
+#summary_wrapper {
+  display: none;
+  font-size: 0.5em;
 }
