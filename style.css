@@ -33,17 +33,15 @@ nav {
   display: table;
   background: rgba(0,0, 0,0.4);
   color: white;
-  text-align: center;
 }
 nav ul {
   list-style: none;
-  display: table-cell;
+  display: table-row;
 }
 nav li {
   text-align: center;
   display: table-cell;
-  float: right;
-  margin: 0 50px 0 50px;
+  margin: 0 30px;
 }
 nav li a {
   color: white;
