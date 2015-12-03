@@ -48,7 +48,8 @@ h2{
 
 body {
   background-image: url("about_me_background.jpg");
-  background-size: contain;
+  background-size: auto;
+  background-attachment: fixed;
   max-width: 100%;
   font-family: Lato;
   font-weight: 200;

@@ -129,6 +129,7 @@ p.info {
   margin: 0 0 0 2px;
 }
 
+<<<<<<< HEAD
 #reset_submit {
   float: center;
    background-color: black;
@@ -141,3 +142,8 @@ p.info {
   display: none;
   font-size: 0.5em;
 }
+=======
+#hand_image {
+  width: 40%;
+}
+>>>>>>> origin/master
