@@ -1,10 +1,11 @@
+/* font */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
+/* general */
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
   background: no-repeat fixed;
   background-size: cover;
@@ -12,20 +13,16 @@ body {
   font-family: Lato;
   font-weight: 200;
 }
-
-a {
-  color:white;
-  text-decoration: none;
-  transition: .5s;
+p {
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  right:2em;
+  text-shadow: 3px 3px 3px grey;
 }
-
-a:hover {
-  color: black;
-}
-
 
 /* navbar */
-
 nav {
   font-size: 2em;
   width: 100%;
@@ -37,7 +34,7 @@ nav {
 }
 nav ul {
   list-style: none;
-  display: table-cell;
+  display: table-row;
 }
 nav li {
   text-align: center;
@@ -47,19 +44,12 @@ nav li {
 }
 nav li a {
   color: white;
+  text-decoration: none;
 }
 nav li:hover a {
   text-decoration: underline;
 }
 
-p {
-  font-size: 4em;
-  color: white;
-  position: absolute;
-  bottom: 50px;
-  right:2em;
-  text-shadow: 3px 3px 3px grey;
-}
 
 
 form, #summary_wrapper {
