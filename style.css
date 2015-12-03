@@ -65,12 +65,11 @@ form, #summary_wrapper {
   margin-right: auto;
 }
 
-
-img.center{
+#logo {
     display: block;
-    margin: auto;
-    margin-top: 8%;
-    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
 }
 
 fieldset {
