@@ -115,25 +115,21 @@
         </div><br /><br />
         <label for="date_needed" class="labelitem">Date needed:</label>
         <input type="date" name="date_needed" id="date_needed" /><br /><br />
-          <label for="quantitity" class="labelitem">Select quantity:</label>
+          <label for="quantitity" class="labelitem">Number of servings:</label>
           <input type="number" id="quantity" name="quantity" min="1" max="350"><br /> <br />
 
         <label for="special_instructions" class="labelitem">Special Instructions:</label>
         <textarea name="special_instructions" id="special_instructions" rows="10" cols="20" placeholder="Please enter any special instructions."></textarea><br />
-        <section id="reset_submit">
-          <input type="reset" value="Reset" onclick="reset_form()" />
-          <input type="submit" value="Submit"/>
-        </section><br />
-        <div id="summary_wrapper">
-          <figure>
-            <figcation id="hand_name"></figcation><br>
-            <img id="hand_image"/>
-          </figure>
-          <fieldset>
-            <legend>Summary</legend>
-            <section id="summary"></section>
-          </fieldset>
-        </div>
+       <section id="reset_submit">
+        <input type="reset" value="Reset" onclick="summarize()" />
+        <input type="submit" value="Submit"/>
+      </section><br />
+      <div id="summary_wrapper">
+        <fieldset>
+          <legend>Summary</legend>
+          <section id="summary"></section>
+        </fieldset>
+      </div>
       </fieldset>
       <br />
     </form>
