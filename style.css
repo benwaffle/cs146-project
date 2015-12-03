@@ -130,7 +130,12 @@ p.info {
 }
 
 #reset_submit {
-  float: right;
+  float: center;
+   background-color: black;
+  color:white;
+  width: 120px;
+  margin-left: 35px;
+  display: block;
 }
 #summary_wrapper {
   display: none;
