@@ -13,14 +13,6 @@ body {
   font-family: Lato;
   font-weight: 200;
 }
-p {
-  font-size: 4em;
-  color: white;
-  position: absolute;
-  bottom: 50px;
-  right:2em;
-  text-shadow: 3px 3px 3px grey;
-}
 
 /* navbar */
 nav {
@@ -45,7 +37,9 @@ nav li a {
   text-decoration: none;
 }
 nav li:hover a {
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 
@@ -133,4 +127,61 @@ p.info {
 
 #hand_image {
   width: 40%;
+}
+/*About Us*/
+img.aboutus {
+  width: 15em;
+  height: 15em;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 50%;
+  margin-top: 60px;
+}
+
+section.people {
+  display: inline;
+  text-align: center; 
+  color: white;
+}
+
+section.people p {
+  padding:10px 0px 10px 0px;
+  font-size: 1.5em;
+  color: white;
+  background: rgba(0,0, 0,0.6);
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 35px 30px 30px 30px;
+}
+
+body#aboutus h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+body#aboutus {
+  background-image: url("about_me_background.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+/*Review*/
+section#reviews article {
+  background: rgba(0,0, 0,0.6);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 35px 30px 30px 30px;
+}
+section#reviews article p {
+  padding: 15px;
+  color: white;
+  font-size: 1.5em;
+  text-align: justify;
+  
+}
+p.author {
+  text-align: right;
 }

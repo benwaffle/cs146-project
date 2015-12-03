@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.aboutus {
+img.aboutus {
   width: 15em;
   height: 15em;
   box-shadow: 5px 5px 5px black;
@@ -13,7 +13,7 @@
   margin-top: 60px;
 }
 
-.people{
+section.people {
   display: inline;
   text-align: center; 
   color: white;
@@ -32,7 +32,7 @@ p {
   border-radius: 35px 30px 30px 30px;
 }
 
-h1 {
+body#aboutus h1 {
   text-align: center;
   padding-bottom: 20px;
 }
@@ -46,7 +46,7 @@ h2{
 }
 
 
-body {
+body#aboutus {
   background-image: url("about_me_background.jpg");
   background-size: auto;
   background-attachment: fixed;
