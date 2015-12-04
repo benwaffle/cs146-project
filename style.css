@@ -12,6 +12,8 @@ body {
   max-width: 100%;
   font-family: Lato;
   font-weight: 200;
+  min-width: 1536px;
+  max-width: 3072px;
 }
 
 /* navbar */
@@ -117,6 +119,7 @@ section#reset_submit {
   display: block;
   margin: auto;
   width: 75%;
+  min-width: 75%;
 }
 
 section#reset_submit>input {
@@ -128,6 +131,7 @@ section#reset_submit>input {
   font-family: Lato;
   font-size: .75em;
   margin: 0% 12% 0% 12%;
+  min-width: 25%;
 }
 
 section#reset_submit>input:hover {
@@ -183,13 +187,14 @@ body#aboutus {
 /*Review*/
 section#reviews {
   margin: 20px;
+  min-width: 420px;
 }
 section#reviews article {
   background: rgba(0,0, 0,0.6);
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 35px;
 }
 section#reviews article p {
@@ -197,10 +202,19 @@ section#reviews article p {
   color: white;
   font-size: 1.5em;
   text-align: justify;
-  
+  width: 70%;
+  float: left;
 }
 p.author {
   text-align: right;
   font-style: italic;
   font-size: 1.25em;
+}
+
+img.reviews {
+  width: 15em;
+  height: 15em;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 50%;
+  margin: 20px;
 }
