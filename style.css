@@ -145,6 +145,16 @@ section#reset_submit>input:hover {
   width: 40%;
 }
 
+#spinner {
+  display: none;
+  width: 5%;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Welcome */
 #logo {
     display: block;

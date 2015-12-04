@@ -53,13 +53,17 @@ function summarize() {
   str += "Quantity: " + id("quantity").value + "<br />";
   str += "Special Instructions: " + id("special_instructions").value.trim();
 
-  id("summary").innerHTML = str;
-  id("summary_wrapper").style.display = "block";
+  id("spinner").style.display = "block";
+  setTimeout(function () {
+    id("spinner").style.display = "none";
+    id("summary").innerHTML = str;
+    id("summary_wrapper").style.display = "block";
 
-  var random = Math.floor(Math.random() * results.length);
-  id("hand_name").innerHTML = results[random].name;
-  id("hand_image").alt = results[random].name;
-  id("hand_image").src = 'images/hands/' + results[random].file;
+    var random = Math.floor(Math.random() * results.length);
+    id("hand_name").innerHTML = results[random].name;
+    id("hand_image").alt = results[random].name;
+    id("hand_image").src = 'images/hands/' + results[random].file;
+  }, 1000);
 }
 
 function reset_form() {
