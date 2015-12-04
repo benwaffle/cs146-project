@@ -155,7 +155,7 @@ section#reset_submit>input:hover {
 }
 #feast{
   display: block;
-  opacity: .8; 
+  opacity: .8;
   margin-bottom: 0;
   padding-bottom: 0;
   margin: 0 auto;
@@ -164,10 +164,11 @@ section#reset_submit>input:hover {
 
 #welcome{
   background: rgba(0,0, 0,.8);
+  text-align: center;
   margin-top:0;
 }
 
-#greeting{ 
+#greeting{
   text-align: center;
   font-size:7em;
   font-family: Lato;
@@ -175,13 +176,6 @@ section#reset_submit>input:hover {
   color: rgba(255,255,255,0.6)
 }
 
-p{
-  font:Lato;
-  color: white;
-  color: rgba(255,255,255,0.6);
-  text-align: center;
-  font-size: 2em 
-}
 /*About Us*/
 img.aboutus {
   width: 15em;
