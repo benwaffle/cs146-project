@@ -61,13 +61,6 @@ form, #summary_wrapper {
   margin: 10px auto;
 }
 
-#logo {
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 10%;
-}
-
 fieldset {
   border: solid 1px white;
   margin-bottom: 5px;
