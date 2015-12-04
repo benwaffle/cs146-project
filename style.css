@@ -233,7 +233,7 @@ h1 {
   float: left;
   width: 15em;
   height: 15em;
-  border-radius: 10px;
+  border-radius: 50%;
   margin: 20px;
 }
 #reviews  blockquote {
