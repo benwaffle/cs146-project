@@ -8,6 +8,7 @@
     <script src="script.js"></script>
   </head>
   <body>
+
     <header>
       <nav>
         <ul>
@@ -18,9 +19,10 @@
         </ul>
       </nav>
     </header>
+
     <form name="form1" id="form1" autocomplete="off" method="get" onsubmit="summarize(); return false;">
       <fieldset>
-        <legend>User Info</legend>
+        <legend>Who are you?</legend>
         <label for="firstname" class="labelitem">First name:</label>
         <input type="text" name="firstname" id="firstname" size="24" maxlength="32" placeholder="Enter first name." required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="First name cannot be blank." /><br />
         <label for="lastname" class="labelitem">Last name:</label>
@@ -90,7 +92,7 @@
         <input type="text" name="zipcode" id="zipcode" size="24" maxlength="10" placeholder="Enter zip code." required pattern="\d{5}(\-\d{4})?" title="##### or #####-####" /><br />
       </fieldset>
       <fieldset>
-        <legend>Services Info</legend>
+        <legend>How can we help?</legend>
         <div class="labelitem">Meal:</div>
         <div class="inputitem">
           <input type="checkbox" name="meal[]" id="breakfast" value="Breakfast" checked="checked" />
