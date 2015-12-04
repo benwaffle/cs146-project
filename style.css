@@ -12,6 +12,8 @@ body {
   max-width: 100%;
   font-family: Lato;
   font-weight: 200;
+  min-width: 1536px;
+  max-width: 3072px;
 }
 
 /* navbar */
@@ -43,7 +45,7 @@ nav li:hover a {
 }
 
 
-
+/*order here */
 form, #summary_wrapper {
   display: inline-block;
   background: rgba(0,0, 0,0.75);
@@ -105,13 +107,35 @@ p.info {
   margin: 0 0 0 2px;
 }
 
+<<<<<<< HEAD
 #reset_submit {
   float: center;
   background-color: black;
+=======
+section#reset_submit {
+>>>>>>> origin/master
   color:white;
-  width: 120px;
-  margin-left: 35px;
   display: block;
+  margin: auto;
+  width: 75%;
+  min-width: 75%;
+}
+
+section#reset_submit>input {
+  color: white;
+  background: rgba(145,145,145, 0.2);
+  border-radius: 3%;
+  text-align: center;
+  display: block;
+  font-family: Lato;
+  font-size: .75em;
+  margin: 0% 12% 0% 12%;
+  min-width: 25%;
+}
+
+section#reset_submit>input:hover {
+  background: black;
+  transition:1s;
 }
 #summary_wrapper {
   display: none;
@@ -177,18 +201,18 @@ section.people p {
   padding:10px 0px 10px 0px;
   font-size: 1.5em;
   color: white;
-  background: rgba(0,0, 0,0.6);
+  background: rgba(0,0, 0,0.7);
   width: 50%;
   margin: auto;
   margin-bottom: 10px;
-  border-radius: 35px 30px 30px 30px;
+  border-radius: 35px;
 }
 
-body#aboutus h1 {
+h1 {
   text-align: center;
   padding-bottom: 20px;
+  font-size: 3.5em;
 }
-
 
 body#aboutus {
   background-image: url("about_me_background.jpg");
@@ -197,21 +221,36 @@ body#aboutus {
 }
 
 /*Review*/
+section#reviews {
+  margin: 20px;
+  min-width: 420px;
+}
 section#reviews article {
   background: rgba(0,0, 0,0.6);
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
-  border-radius: 35px 30px 30px 30px;
+  margin-bottom: 20px;
+  border-radius: 35px;
 }
 section#reviews article p {
   padding: 15px;
   color: white;
   font-size: 1.5em;
   text-align: justify;
-  
+  width: 70%;
+  float: left;
 }
 p.author {
   text-align: right;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+img.reviews {
+  width: 15em;
+  height: 15em;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 50%;
+  margin: 20px;
 }
