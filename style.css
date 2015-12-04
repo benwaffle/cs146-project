@@ -94,7 +94,7 @@ input:not([type=checkbox]):not([type=radio]) { width: 300px; }
 /* input, select, and not textarea, should not be 1 line high */
 input, select { height: 2em; }
 /* on chrome, this also changes the background color of the dropdown */
-select:active { background: black; }
+select:focus { background: black; }
 /* invalid inputs */
 input:required:invalid { border-bottom-color: red; }
 
