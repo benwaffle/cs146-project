@@ -15,6 +15,16 @@ body {
   min-width: 1536px;
   max-width: 3072px;
 }
+body#about {
+  background-image: url("about_me_background.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+}
+p {
+  font:Lato;
+  color: white;
+  font-size: 2em
+}
 
 /* navbar */
 nav {
@@ -176,13 +186,6 @@ section#reset_submit>input:hover {
   color: rgba(255,255,255,0.6)
 }
 
-p{
-  font:Lato;
-  color: white;
-  color: rgba(255,255,255,0.6);
-  text-align: center;
-  font-size: 2em
-}
 /*About Us*/
 img.aboutus {
   width: 15em;
@@ -215,11 +218,6 @@ h1 {
   font-size: 3.5em;
 }
 
-body#aboutus {
-  background-image: url("about_me_background.jpg");
-  background-size: auto;
-  background-attachment: fixed;
-}
 
 /*Review*/
 section#reviews {
