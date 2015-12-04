@@ -54,13 +54,6 @@ form, #summary_wrapper {
   margin-right: 12.5%;
 }
 
-#logo {
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 10%;
-}
-
 fieldset {
   border: solid 1px white;
   margin-bottom: 5px;
@@ -114,7 +107,7 @@ p.info {
 
 #reset_submit {
   float: center;
-   background-color: black;
+  background-color: black;
   color:white;
   width: 120px;
   margin-left: 35px;
@@ -127,6 +120,43 @@ p.info {
 
 #hand_image {
   width: 40%;
+}* 
+
+/* Welcome */
+#logo {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+  #feast{
+  display: block;
+  opacity: .8; 
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+}
+
+#welcome{
+  background: rgba(0,0, 0,.8);
+  margin-top:0;
+}
+
+#greeting{ 
+  text-align: center;
+  font-size:7em;
+  font-family: Lato;
+  font-weight: 200;
+  color: rgba(255,255,255,0.6)
+}
+
+p{
+  font:Lato;
+  color: white;
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  font-size: 2em 
 }
 /*About Us*/
 img.aboutus {
