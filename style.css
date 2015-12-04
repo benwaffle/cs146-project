@@ -165,10 +165,10 @@ section.people p {
   width: 50%;
   margin: auto;
   margin-bottom: 10px;
-  border-radius: 35px 30px 30px 30px;
+  border-radius: 35px;
 }
 
-body#aboutus h1 {
+h1 {
   text-align: center;
   padding-bottom: 20px;
   font-size: 3.5em;
@@ -190,7 +190,7 @@ section#reviews article {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  border-radius: 35px 30px 30px 30px;
+  border-radius: 35px;
 }
 section#reviews article p {
   padding: 15px;
@@ -201,4 +201,6 @@ section#reviews article p {
 }
 p.author {
   text-align: right;
+  font-style: italic;
+  font-size: 1.25em;
 }
