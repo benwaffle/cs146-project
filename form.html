@@ -22,115 +22,116 @@
 
     <form name="form1" id="form1" autocomplete="off" method="get" onsubmit="summarize(); return false;">
       <fieldset>
-        <legend>Who are you?</legend>
-        <label for="firstname" class="labelitem">First name:</label>
+        <legend>who are you?</legend>
+        <label for="firstname" class="labelitem">first name:</label>
         <input type="text" name="firstname" id="firstname" size="24" maxlength="32" placeholder="Enter first name." required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="First name cannot be blank." /><br />
-        <label for="lastname" class="labelitem">Last name:</label>
+        <label for="lastname" class="labelitem">last name:</label>
         <input type="text" name="lastname" id="lastname" size="24" maxlength="32" placeholder="Enter last name." required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="Last name cannot be blank." /><br />
-        <div class="labelitem"><label for="address1">Address:</label></div>
+        <div class="labelitem"><label for="address1">address:</label></div>
         <div class="inputitem" id="address">
           <input type="text" name="address1" id="address1" size="24" maxlength="32" placeholder="Enter street address." required pattern=".+" title="Address cannot be blank." /><br />
           <input type="text" name="address2" id="address2" size="24" maxlength="32" /><br />
         </div><br />
-        <label for="city" class="labelitem">City:</label>
+        <label for="city" class="labelitem">city:</label>
         <input type="text" name="city" id="city" size="24" maxlength="32" placeholder="Enter city." required /><br />
-        <label for="state" class="labelitem">State:</label>
+        <label for="state" class="labelitem">state:</label>
         <select name="state" id="state" required>
-          <option value="" selected disabled>Choose a State</option> <!-- default value -->
-          <option value="AL">Alabama</option>
-          <option value="AK">Alaska</option>
-          <option value="AZ">Arizona</option>
-          <option value="AR">Arkansas</option>
-          <option value="CA">California</option>
-          <option value="CO">Colorado</option>
-          <option value="CT">Connecticut</option>
-          <option value="DE">Delaware</option>
-          <option value="DC">District Of Columbia</option>
-          <option value="FL">Florida</option>
-          <option value="GA">Georgia</option>
-          <option value="HI">Hawaii</option>
-          <option value="ID">Idaho</option>
-          <option value="IL">Illinois</option>
-          <option value="IN">Indiana</option>
-          <option value="IA">Iowa</option>
-          <option value="KS">Kansas</option>
-          <option value="KY">Kentucky</option>
-          <option value="LA">Louisiana</option>
-          <option value="ME">Maine</option>
-          <option value="MD">Maryland</option>
-          <option value="MA">Massachusetts</option>
-          <option value="MI">Michigan</option>
-          <option value="MN">Minnesota</option>
-          <option value="MS">Mississippi</option>
-          <option value="MO">Missouri</option>
-          <option value="MT">Montana</option>
-          <option value="NE">Nebraska</option>
-          <option value="NV">Nevada</option>
-          <option value="NH">New Hampshire</option>
-          <option value="NJ">New Jersey</option>
-          <option value="NM">New Mexico</option>
-          <option value="NY">New York</option>
-          <option value="NC">North Carolina</option>
-          <option value="ND">North Dakota</option>
-          <option value="OH">Ohio</option>
-          <option value="OK">Oklahoma</option>
-          <option value="OR">Oregon</option>
-          <option value="PA">Pennsylvania</option>
-          <option value="RI">Rhode Island</option>
-          <option value="SC">South Carolina</option>
-          <option value="SD">South Dakota</option>
-          <option value="TN">Tennessee</option>
-          <option value="TX">Texas</option>
-          <option value="UT">Utah</option>
-          <option value="VT">Vermont</option>
-          <option value="VA">Virginia</option>
-          <option value="WA">Washington</option>
-          <option value="WV">West Virginia</option>
-          <option value="WI">Wisconsin</option>
-          <option value="WY">Wyoming</option>
+          <option value="" selected disabled>choose a state</option> <!-- default value -->
+          <option value="AL">alabama</option>
+          <option value="AK">alaska</option>
+          <option value="AZ">arizona</option>
+          <option value="AR">arkansas</option>
+          <option value="CA">california</option>
+          <option value="CO">colorado</option>
+          <option value="CT">connecticut</option>
+          <option value="DE">delaware</option>
+          <option value="DC">district of columbia</option>
+          <option value="FL">florida</option>
+          <option value="GA">georgia</option>
+          <option value="HI">hawaii</option>
+          <option value="ID">idaho</option>
+          <option value="IL">illinois</option>
+          <option value="IN">indiana</option>
+          <option value="IA">iowa</option>
+          <option value="KS">kansas</option>
+          <option value="KY">kentucky</option>
+          <option value="LA">louisiana</option>
+          <option value="ME">maine</option>
+          <option value="MD">maryland</option>
+          <option value="MA">massachusetts</option>
+          <option value="MI">michigan</option>
+          <option value="MN">minnesota</option>
+          <option value="MS">mississippi</option>
+          <option value="MO">missouri</option>
+          <option value="MT">montana</option>
+          <option value="NE">nebraska</option>
+          <option value="NV">nevada</option>
+          <option value="NH">new hampshire</option>
+          <option value="NJ">new jersey</option>
+          <option value="NM">new mexico</option>
+          <option value="NY">new york</option>
+          <option value="NC">north carolina</option>
+          <option value="ND">north dakota</option>
+          <option value="OH">ohio</option>
+          <option value="OK">oklahoma</option>
+          <option value="OR">oregon</option>
+          <option value="PA">pennsylvania</option>
+          <option value="RI">rhode Island</option>
+          <option value="SC">south Carolina</option>
+          <option value="SD">south Dakota</option>
+          <option value="TN">tennessee</option>
+          <option value="TX">texas</option>
+          <option value="UT">utah</option>
+          <option value="VT">vermont</option>
+          <option value="VA">virginia</option>
+          <option value="WA">washington</option>
+          <option value="WV">west virginia</option>
+          <option value="WI">wisconsin</option>
+          <option value="WY">wyoming</option>
         </select><br />
-        <label for="zipcode" class="labelitem">Zip code:</label>
+        <label for="zipcode" class="labelitem">zip code:</label>
         <input type="text" name="zipcode" id="zipcode" size="24" maxlength="10" placeholder="Enter zip code." required pattern="\d{5}(\-\d{4})?" title="##### or #####-####" /><br />
       </fieldset>
       <fieldset>
-        <legend>How can we help?</legend>
-        <div class="labelitem">Meal:</div>
+        <legend>how can we help?</legend>
+        <div class="labelitem">meal:</div>
         <div class="inputitem">
           <input type="checkbox" name="meal[]" id="breakfast" value="Breakfast" checked="checked" />
-          <label for="breakfast">Breakfast</label><br />
+          <label for="breakfast">breakfast</label><br />
           <input type="checkbox" name="meal[]" id="lunch" value="Lunch" />
-          <label for="lunch">Lunch</label><br />
+          <label for="lunch">lunch</label><br />
           <input type="checkbox" name="meal[]" id="dinner" value="Dinner" />
-          <label for="dinner">Dinner</label><br />
+          <label for="dinner">dinner</label><br />
           <input type="checkbox" name="meal[]" id="snacks" value="Snacks" />
-          <label for="snacks">Snacks</label>
+          <label for="snacks">snacks</label>
         </div><br /><br />
-        <div class="labelitem">Meal Type:</div>
+        <div class="labelitem">meal type:</div>
         <div class="inputitem">
           <input type="radio" name="meal_type" id="chinese" value="Chinese" checked="checked" />
-          <label for="chinese">Chinese</label><br />
+          <label for="chinese">chinese</label><br />
           <input type="radio" name="meal_type" id="mexican" value="Mexican" />
-          <label for="mexican">Mexican</label><br />
+          <label for="mexican">mexican</label><br />
           <input type="radio" name="meal_type" id="holiday" value="Holiday" />
-          <label for="holiday">Holiday</label><br />
+          <label for="holiday">holiday</label><br />
           <input type="radio" name="meal_type" id="cupcakes" value="Cupcakes" />
-          <label for="cupcakes">Cupcakes</label><br />
+          <label for="cupcakes">cupcakes</label><br />
           <input type="radio" name="meal_type" id="other" value="Other" />
-          <label for="other">Other</label>
+          <label for="other">other</label>
         </div><br /><br />
-        <label for="date_needed" class="labelitem">Date needed:</label>
+        <label for="date_needed" class="labelitem">date needed:</label>
         <input type="date" name="date_needed" id="date_needed" /><br /><br />
-        <label for="quantity" class="labelitem">Number of servings:</label>
+        <label for="quantity" class="labelitem">number of servings:</label>
         <input type="number" id="quantity" name="quantity" min="1" max="350"><br /> <br />
 
-        <label for="special_instructions" class="labelitem">Special Instructions:</label>
-        <textarea name="special_instructions" id="special_instructions" rows="10" cols="20" placeholder="Please enter any special instructions."></textarea><br />
+        <label for="special_instructions" class="labelitem">special instructions:</label>
+        <textarea name="special_instructions" id="special_instructions" rows="10" cols="20" placeholder="please enter any special instructions."></textarea><br />
         <section id="reset_submit">
-          <input type="reset" value="Reset" onclick="reset_form()" />
-          <input type="submit" value="Submit"/>
+          <input type="reset" value="reset" onclick="reset_form()" />
+          <input type="submit" value="submit"/>
+          <br /><br />
         </section>
         <br>
-        <img src="spinner.png" id="spinner" />
+        <img src="spinner.png" id="spinner" alt="Loading"/>
         <div id="summary_wrapper">
           <figure>
             <figcaption id="hand_name"></figcaption><br>
