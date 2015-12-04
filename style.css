@@ -154,27 +154,6 @@ section#reset_submit>input:hover {
     margin-bottom: 10%;
 }
 
-#feast {
-  display: block;
-  opacity: .8;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  margin: 0 auto;
-}
-
-#welcome {
-  background: rgba(0,0, 0,.8);
-  margin-top:0;
-}
-
-#greeting {
-  text-align: center;
-  font-size:7em;
-  font-family: Lato;
-  font-weight: 200;
-  color: rgba(255,255,255,0.6)
-}
-
 /*About Us*/
 img.aboutus {
   width: 15em;
