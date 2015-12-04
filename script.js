@@ -58,6 +58,7 @@ function summarize() {
 
   var random = Math.floor(Math.random() * results.length);
   id("hand_name").innerHTML = results[random].name;
+  id("hand_image").alt = results[random].name;
   id("hand_image").src = 'images/hands/' + results[random].file;
 }
 

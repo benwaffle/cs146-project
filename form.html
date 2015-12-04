@@ -36,6 +36,7 @@
         <input type="text" name="city" id="city" size="24" maxlength="32" placeholder="Enter city." required /><br />
         <label for="state" class="labelitem">State:</label>
         <select name="state" id="state" required>
+          <option value="" selected disabled>Choose a State</option> <!-- default value -->
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AZ">Arizona</option>
@@ -119,7 +120,7 @@
         </div><br /><br />
         <label for="date_needed" class="labelitem">Date needed:</label>
         <input type="date" name="date_needed" id="date_needed" /><br /><br />
-        <label for="quantitity" class="labelitem">Number of servings:</label>
+        <label for="quantity" class="labelitem">Number of servings:</label>
         <input type="number" id="quantity" name="quantity" min="1" max="350"><br /> <br />
 
         <label for="special_instructions" class="labelitem">Special Instructions:</label>
@@ -131,8 +132,8 @@
         <br />
         <div id="summary_wrapper">
           <figure>
-            <figcation id="hand_name"></figcation><br>
-            <img id="hand_image"/>
+            <figcaption id="hand_name"></figcaption><br>
+            <img id="hand_image" src="#" alt="" />
           </figure>
           <fieldset>
             <legend>Summary</legend>
