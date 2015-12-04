@@ -78,7 +78,7 @@ input, select, textarea {
   text-align: left;
 }
 
-#address{
+#address {
   width:500px;
 }
 
@@ -153,7 +153,8 @@ section#reset_submit>input:hover {
     margin-top: 10%;
     margin-bottom: 10%;
 }
-  #feast{
+
+#feast {
   display: block;
   opacity: .8;
   margin-bottom: 0;
@@ -161,12 +162,12 @@ section#reset_submit>input:hover {
   margin: 0 auto;
 }
 
-#welcome{
+#welcome {
   background: rgba(0,0, 0,.8);
   margin-top:0;
 }
 
-#greeting{
+#greeting {
   text-align: center;
   font-size:7em;
   font-family: Lato;
