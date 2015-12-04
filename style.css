@@ -43,7 +43,7 @@ nav li:hover a {
 }
 
 
-
+/*order here */
 form, #summary_wrapper {
   display: inline-block;
   background: rgba(0,0, 0,0.75);
@@ -112,13 +112,27 @@ p.info {
   margin: 0 0 0 2px;
 }
 
-#reset_submit {
-  float: center;
-   background-color: black;
+section#reset_submit {
   color:white;
-  width: 120px;
-  margin-left: 35px;
   display: block;
+  margin: auto;
+  width: 75%;
+}
+
+section#reset_submit>input {
+  color: white;
+  background: rgba(145,145,145, 0.2);
+  border-radius: 3%;
+  text-align: center;
+  display: block;
+  font-family: Lato;
+  font-size: .75em;
+  margin: 0% 12% 0% 12%;
+}
+
+section#reset_submit>input:hover {
+  background: black;
+  transition:1s;
 }
 #summary_wrapper {
   display: none;
@@ -147,7 +161,7 @@ section.people p {
   padding:10px 0px 10px 0px;
   font-size: 1.5em;
   color: white;
-  background: rgba(0,0, 0,0.6);
+  background: rgba(0,0, 0,0.7);
   width: 50%;
   margin: auto;
   margin-bottom: 10px;
@@ -157,8 +171,8 @@ section.people p {
 body#aboutus h1 {
   text-align: center;
   padding-bottom: 20px;
+  font-size: 3.5em;
 }
-
 
 body#aboutus {
   background-image: url("about_me_background.jpg");
@@ -167,6 +181,9 @@ body#aboutus {
 }
 
 /*Review*/
+section#reviews {
+  margin: 20px;
+}
 section#reviews article {
   background: rgba(0,0, 0,0.6);
   width: 50%;
