@@ -107,13 +107,7 @@ p.info {
   margin: 0 0 0 2px;
 }
 
-<<<<<<< HEAD
-#reset_submit {
-  float: center;
-  background-color: black;
-=======
 section#reset_submit {
->>>>>>> origin/master
   color:white;
   display: block;
   margin: auto;
@@ -144,7 +138,7 @@ section#reset_submit>input:hover {
 
 #hand_image {
   width: 40%;
-}* 
+}*
 
 /* Welcome */
 #logo {
@@ -156,7 +150,7 @@ section#reset_submit>input:hover {
 }
   #feast{
   display: block;
-  opacity: .8; 
+  opacity: .8;
   margin-bottom: 0;
   padding-bottom: 0;
   margin: 0 auto;
@@ -167,7 +161,7 @@ section#reset_submit>input:hover {
   margin-top:0;
 }
 
-#greeting{ 
+#greeting{
   text-align: center;
   font-size:7em;
   font-family: Lato;
@@ -180,7 +174,7 @@ p{
   color: white;
   color: rgba(255,255,255,0.6);
   text-align: center;
-  font-size: 2em 
+  font-size: 2em
 }
 /*About Us*/
 img.aboutus {
@@ -193,7 +187,7 @@ img.aboutus {
 
 section.people {
   display: inline;
-  text-align: center; 
+  text-align: center;
   color: white;
 }
 
