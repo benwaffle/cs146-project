@@ -12,8 +12,6 @@ body {
   max-width: 100%;
   font-family: Lato;
   font-weight: 200;
-  min-width: 1536px;
-  max-width: 3072px;
 }
 body#about {
   background-image: url("about_me_background.jpg");
@@ -57,13 +55,10 @@ nav li:hover a {
 
 /*order here */
 form, #summary_wrapper {
-  display: inline-block;
   background: rgba(0,0, 0,0.75);
   width: 75%;
-  margin-bottom: 10px;
   padding: 10px;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  margin: 10px auto;
 }
 
 #logo {
