@@ -12,6 +12,22 @@ var results = [
     file: 'RonStoppable.png'
   },
   {
+    name: 'Brian Borowski',
+    file: 'bborowski.jpeg'
+  },
+  {
+    name: 'Pearl',
+    file: 'Pearl.jpg'
+  },
+  {
+    name: 'Brandon Flowers',
+    file: 'BrandonFlowers.jpg'
+  },
+  {
+    name: 'Donald Trump',
+    file: 'DonaldTrump.jpg'
+  },
+  {
     name: 'Sam',
     file: 'SamIAm.jpg'
   }
