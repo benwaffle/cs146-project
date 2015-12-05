@@ -79,7 +79,8 @@ fieldset {
   font-size: 2em;
 }
 form label, form .labelitem {
-  text-align: center;
+  text-align: right;
+  margin: 5px 0 5px 0;
 }
 
 input, select, textarea {
@@ -101,7 +102,7 @@ input, select, textarea {
 /* textarea has border on all 4 sides, not just bottom */
 textarea { border: 3px solid white; }
 /* checkboxes and radio buttons should not be really wide */
-input:not([type=checkbox]):not([type=radio]) { width: 300px; }
+input:not([type=checkbox]):not([type=radio]), select, textarea { width: 300px; }
 /* input, select, and not textarea, should not be 1 line high */
 input, select { height: 2em; }
 /* on chrome, this also changes the background color of the dropdown */
