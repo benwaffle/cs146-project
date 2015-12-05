@@ -66,6 +66,11 @@ form, #summary_wrapper {
   padding: 10px;
   margin: 10px auto;
 }
+@media (max-width: 650px) {
+  form {
+    width: 90%;
+  }
+}
 
 fieldset {
   border: solid 1px white;
