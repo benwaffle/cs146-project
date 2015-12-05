@@ -42,6 +42,12 @@ nav li {
   display: table-cell;
   margin: 0 30px;
 }
+/* responsive */
+@media (max-width: 650px) {
+  nav li {
+    display: block;
+  }
+}
 nav li a {
   color: white;
   text-decoration: none;
