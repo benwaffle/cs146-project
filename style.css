@@ -183,7 +183,8 @@ p.info {
   max-width:100%;
 }
 
-#welcome{
+#welcome, footer {
+  color: white;
   background: rgba(0,0, 0,.8);
   text-align: center;
   margin-top:0;
