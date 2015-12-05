@@ -42,6 +42,12 @@ nav li {
   display: table-cell;
   margin: 0 30px;
 }
+/* responsive */
+@media (max-width: 650px) {
+  nav li {
+    display: block;
+  }
+}
 nav li a {
   color: white;
   text-decoration: none;
@@ -60,37 +66,65 @@ form, #summary_wrapper {
   padding: 10px;
   margin: 10px auto;
 }
+@media (max-width: 650px) {
+  form {
+    width: 90%;
+  }
+}
 
 fieldset {
   border: solid 1px white;
-  margin-bottom: 5px;
-  color:white;
+  margin-bottom: 10px;
+  color: white;
   font-size: 2em;
-  text-align: center;
 }
+form label, form .labelitem {
+  text-align: right;
+  margin: 5px 0 5px 0;
+}
+
 input, select, textarea {
   display: block;
   float: left;
-  margin: 2px;
-  height:2em;
-  width:300px;
   box-sizing: border-box;
   text-align: left;
+
+  /* no background, only bottom border */
+  background: none;
+  border: none;
+  border-bottom: 3px solid white;
+
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.7em;
+}
+/* textarea has border on all 4 sides, not just bottom */
+textarea { border: 3px solid white; }
+/* checkboxes and radio buttons should not be really wide */
+input:not([type=checkbox]):not([type=radio]), select, textarea { width: 300px; }
+/* input, select, and not textarea, should not be 1 line high */
+input, select { height: 2em; }
+/* on chrome, this also changes the background color of the dropdown */
+select:focus { background: black; }
+/* invalid inputs */
+input:required:invalid { border-bottom-color: red; }
+
+input[type=submit], input[type=reset] {
+  color: white;
+  background: none;
+  border: 3px solid white;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+  color: rgba(0, 0, 0, 0.75);
+  background: white;
+}
+/* offset the text a bit when you click */
+input[type=submit]:active, input[type=reset]:active {
+  padding-top: 7px;
+  padding-left: 7px;
 }
 
-#address {
-  width:500px;
-}
-
-input:required:invalid {
-  background: white right no-repeat url("invalid.png");
-}
-input:required:valid {
-  background: white right no-repeat url("valid.png");
-}
-input:required:valid ~ p.info {
-  visibility: hidden;
-}
 .inputitem {
   display: block;
   float: left;
@@ -112,33 +146,10 @@ p.info {
   margin: 0 0 0 2px;
 }
 
-section#reset_submit {
-  color:white;
-  display: block;
-  margin: auto;
-  width: 75%;
-  min-width: 75%;
-}
-
-section#reset_submit>input {
-  color: white;
-  background: rgba(145,145,145, 0.2);
-  border-radius: 3%;
-  text-align: center;
-  display: block;
-  font-family: Lato;
-  font-size: .75em;
-  margin: 0% 12% 0% 12%;
-  min-width: 25%;
-}
-
-section#reset_submit>input:hover {
-  background: black;
-  transition:1s;
-}
 #summary_wrapper {
   display: none;
   font-size: 0.5em;
+  text-align: center;
 }
 
 #hand_image {
@@ -172,7 +183,8 @@ section#reset_submit>input:hover {
   max-width:100%;
 }
 
-#welcome{
+#welcome, footer {
+  color: white;
   background: rgba(0,0, 0,.8);
   text-align: center;
   margin-top:0;

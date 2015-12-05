@@ -12,61 +12,84 @@ var results = [
     file: 'RonStoppable.png'
   },
   {
+    name: 'Brian Borowski',
+    file: 'bborowski.jpeg'
+  },
+  {
+    name: 'Pearl',
+    file: 'Pearl.jpg'
+  },
+  {
+    name: 'Brandon Flowers',
+    file: 'BrandonFlowers.jpg'
+  },
+  {
+    name: 'Donald Trump',
+    file: 'DonaldTrump.jpg'
+  },
+  {
     name: 'Sam',
     file: 'SamIAm.jpg'
   }
 ];
 
-function id(id) {
-  return document.getElementById(id);
+// because we can use jQuery
+// just pass any CSS selector
+function $(selector) {
+    var items = document.querySelectorAll(selector);
+    if (items.length == 1)
+      return items[0];
+    if (items.length == 0)
+      return null;
+    return items;
 }
 
 function summarize() {
-  var str = id("firstname").value.trim() + " " +
-                    id("lastname").value.trim() + "<br />" +
-                    id("address1").value.trim() + "<br />";
-  var field = id("address2").value;
+  var str = $("#firstname").value.trim() + " " +
+            $("#lastname").value.trim() + "<br>" +
+            $("#address1").value.trim() + "<br>";
+  var field = $("#address2").value;
   if (field !== null && field.trim() !== "") {
-    str += field + "<br />";
+    str += field + "<br>";
   }
-  str += id("city").value.trim() + ", " +
-                 id("state").value.trim() + " " +
-                 id("zipcode").value.trim() + "<br />";
+  str += $("#city").value.trim() + ", " +
+         $("#state").value.trim() + " " +
+         $("#zipcode").value.trim() + "<br>";
   str += "Meal Type: ";
-  var radios = document.getElementsByName("meal_type");
+  var radios = $("[name='meal_type']");
   for (var i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
-      str += radios[i].value + "<br />";
+      str += radios[i].value + "<br>";
       break;
     }
   }
   str += "Meal: ";
-  var checkboxes = document.getElementsByName("meal[]");
+  var checkboxes = $("[name='meal[]']");
   var selected_meals = [];
   for (var i = 0; i < checkboxes.length; i++) {
     if (checkboxes[i].checked) {
       selected_meals.push(checkboxes[i].value);
     }
   }
-  str += selected_meals + "<br />";
-  str += "Date needed: " + id("date_needed").value + "<br />";
-  str += "Quantity: " + id("quantity").value + "<br />";
-  str += "Special Instructions: " + id("special_instructions").value.trim();
+  str += selected_meals + "<br>";
+  str += "Date needed: " + $("#date_needed").value + "<br>";
+  str += "Quantity: " + $("#quantity").value + "<br>";
+  str += "Special Instructions: " + $("#special_instructions").value.trim();
 
-  id("spinner").style.display = "block";
+  $("#spinner").style.display = "block";
   setTimeout(function () {
-    id("spinner").style.display = "none";
-    id("summary").innerHTML = str;
-    id("summary_wrapper").style.display = "block";
+    $("#spinner").style.display = "none";
+    $("#summary").innerHTML = str;
+    $("#summary_wrapper").style.display = "block";
 
     var random = Math.floor(Math.random() * results.length);
-    id("hand_name").innerHTML = results[random].name;
-    id("hand_image").alt = results[random].name;
-    id("hand_image").src = 'images/hands/' + results[random].file;
+    $("#hand_name").innerHTML = results[random].name;
+    $("#hand_image").alt = results[random].name;
+    $("#hand_image").src = 'images/hands/' + results[random].file;
   }, 1000);
 }
 
 function reset_form() {
-  id("summary").innerHTML = "";
-  id("summary_wrapper").style.display = "none";
+  $("#summary").innerHTML = "";
+  $("#summary_wrapper").style.display = "none";
 }
